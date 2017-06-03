@@ -1,0 +1,31 @@
+:root {
+  --font-title-size: 80px;
+  --grad-start: hsl(320, 100%, 75%);
+  --grad-end:   hsl(80, 100%, 75%);
+}
+
+body {
+  display:         flex;
+  justify-content: center;
+  align-items:     center;
+
+  height:  100vh;
+
+  background: linear-gradient(135deg, var(--grad-start), var(--grad-end)) fixed;
+}
+
+p {
+  position:       relative;
+  font:           100 var(--font-title-size)/1 'Bungee Shade';
+  text-align:     center;
+  letter-spacing: 3px;
+  color:          #000000;
+  background-color: #ffffff;
+  padding: 30px;
+  padding-bottom: 40px;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.name {
+  padding-bottom: 70px;
+}
