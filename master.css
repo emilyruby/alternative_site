@@ -1,5 +1,5 @@
 :root {
-  --font-title-size: 80px;
+  --font-title-size: 110px;
   --grad-start: hsl(320, 100%, 75%);
   --grad-end:   hsl(80, 100%, 75%);
 }
@@ -14,18 +14,22 @@ body {
   background: linear-gradient(135deg, var(--grad-start), var(--grad-end)) fixed;
 }
 
-p {
-  position:       relative;
-  font:           100 var(--font-title-size)/1 'Bungee Shade';
-  text-align:     center;
-  letter-spacing: 3px;
-  color:          #000000;
+.name {
   background-color: #ffffff;
-  padding: 30px;
-  padding-bottom: 40px;
   box-shadow: 10px 10px 5px #888888;
+  padding: 10px;
 }
 
-.name {
-  padding-bottom: 70px;
+.gradient-text-1 {
+  background-image: linear-gradient(
+    to right,
+    tomato,
+    gold 40%,
+    blueviolet,
+    mediumspringgreen 90%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font:           100 var(--font-title-size)/1 'Bungee Shade';
+  letter-spacing: 3px;
 }
