@@ -1,23 +1,33 @@
 :root {
-  --font-title-size: 110px;
   --grad-start: hsl(320, 100%, 75%);
   --grad-end:   hsl(80, 100%, 75%);
 }
 
 body {
-  display:         flex;
-  justify-content: center;
-  align-items:     center;
-
   height:  100vh;
-
   background: linear-gradient(135deg, var(--grad-start), var(--grad-end)) fixed;
+  margin: 0;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 10vw 80vw 10vw;
+  grid-template-rows: 10vh 80vh 10vh;
+  justify-items: center;
+  align-items: center;
+}
+
+.title {
+  grid-column-start: 2;
+  grid-row-start: 2;
 }
 
 .name {
+  font-size: 110px;
   background-color: #ffffff;
   box-shadow: 10px 10px 5px #888888;
   padding: 10px;
+  text-align: center;
 }
 
 .gradient-text-1 {
@@ -30,6 +40,14 @@ body {
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font:           100 var(--font-title-size)/1 'Bungee Shade';
+  font:           100 110px/1 'Bungee Shade';
   letter-spacing: 3px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 650px) {
+    .gradient-text-1 {
+        font-size: 15vw;
+    }
 }
