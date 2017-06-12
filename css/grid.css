@@ -1,0 +1,29 @@
+.social {
+  grid-column-start: 4;
+  grid-row-start: 9;
+}
+
+.name {
+  grid-column: 3 / span 3;
+  grid-row: 4 / span 4;
+}
+
+.whoami {
+  grid-column: 3 / span 3;
+  grid-row-start: 11;
+}
+
+.vp {
+  grid-column: 3 / span 3;
+  grid-row: 12 / span 1;
+}
+
+.sheplusplus {
+  grid-column: 3 / span 3;
+  grid-row: 14 / span 1;
+}
+
+.athena {
+  grid-column: 3 / span 3;
+  grid-row: 16 / span 1;
+}

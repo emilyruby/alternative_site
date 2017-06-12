@@ -1,10 +1,20 @@
-@import 'social.css';
+@import "social.css";
+@import "grid.css";
 
 :root {
   --grad-start: hsl(320, 100%, 75%);
   --grad-end:   hsl(80, 100%, 75%);
-  --subtitle:   90px;
-  --title:      110px;
+  --subtitle:   80px;
+  --title:      90px;
+  --header:     30px;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 15vw 10vw 7vw 36vw 7vw 10vw 15vw;
+  grid-template-rows: repeat(3, 10vh 20vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh);
+  justify-items: center;
+  align-items: center;
 }
 
 body {
@@ -15,48 +25,35 @@ body {
 
 a {
   text-indent: none;
+  text-decoration: none;
 }
 
-.page {
-  display: grid;
-  grid-template-columns: 10vw 80vw 10vw;
-  grid-template-rows: repeat(3, 10vh 80vh 10vh);
-  justify-items: center;
-  align-items: center;
+.text {
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 10px 10px 5px #888888;
+  padding: 10px;
+  text-align: center;
+  align-self: start;
+  font-family: 'Bungee Shade';
 }
 
-.social {
-  grid-column-start: 2;
-  grid-row-start: 3;
+.subtitle {
+  font-size: var(--subtitle);
+}
+
+.header {
+  font-size: var(--header);
+  border-radius: 10px;
+  font-family: 'Roboto Mono';
 }
 
 .title {
-  grid-column-start: 2;
-  grid-row-start: 2;
-}
-
-.name {
-  background-color: #ffffff;
-  box-shadow: 10px 10px 5px #888888;
+  font-size: var(--title);
   padding: 10px;
-  text-align: center;
-  font: 100 var(--title)/1 'Bungee Shade';
 }
 
-.who {
-  grid-column-start: 2;
-  grid-row-start: 5;
-}
-
-.whoami {
-  background-color: #ffffff;
-  box-shadow: 10px 10px 5px #888888;
-  padding: 10px;
-  text-align: center;
-  font: 100 var(--subtitle)/1 'Bungee Shade';
-}
-
-.gradient-text-1 {
+.gradient-text {
   background-image: linear-gradient(
     to right,
     tomato,
@@ -69,6 +66,19 @@ a {
   letter-spacing: 3px;
   margin: 0;
   margin-bottom: 10px;
+}
+
+.grow {
+    height: 100px;
+    width: 22%;
+    margin: 5px 1% 5px 1%;
+    float: left; /* Just for presentation (Not required) */
+    position: relative; /* Just for presentation (Not required) */
+    transition:height 0.5s; /* Animation time */
+    -webkit-transition:height 0.5s; /* For Safari */
+}
+.grow:hover {
+    height: 115px; /* This is the height on hover */
 }
 
 @media only screen and (max-width: 650px) {
