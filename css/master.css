@@ -1,5 +1,6 @@
 @import "social.css";
 @import "grid.css";
+@import "media.css";
 
 :root {
   --grad-start: hsl(320, 100%, 75%);
@@ -12,7 +13,7 @@
 .page {
   display: grid;
   grid-template-columns: 15vw 10vw 7vw 36vw 7vw 10vw 15vw;
-  grid-template-rows: repeat(3, 10vh 20vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh);
+  grid-template-rows: repeat(5, 10vh 20vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh);
   justify-items: center;
   align-items: center;
 }
@@ -21,6 +22,10 @@ body {
   height:  100vh;
   background: linear-gradient(135deg, var(--grad-start), var(--grad-end)) fixed;
   margin: 0;
+}
+
+#signup {
+  font-family: 'Roboto Mono';
 }
 
 a {
@@ -48,13 +53,13 @@ a {
   font-family: 'Roboto Mono';
   transition: 0.5s;
   -webkit-transition: 0.5s;
-  width: 40vw;
-  height: 12vh;
+  width: 35vw;
+  height: 10vh;
 }
 
 .header:hover {
-  height: 12.5vh;
-  width: 50vw;
+  height: 11vh;
+  width: 40vw;
 }
 
 .title {
@@ -77,50 +82,8 @@ a {
   margin-bottom: 10px;
 }
 
-@media all and (min-width: 837px) and (max-width: 1211px){
-  .title {
-    font-size: 7vw;
-  }
-  .subtitle {
-    font-size: 6vw;
-  }
-  .header {
-    height: 13vh;
-    width: auto;
-  }
-  .sheplusplus {
-    font-size: 2.5vw;
-  }
-  .athena {
-    font-size: 2.5vw;
-  }
-  .vp {
-    font-size: 3vw;
-  }
-}
-
-@media all and (max-width: 836px) {
-  .title {
-    font-size: 12vw;
-  }
-  .subtitle {
-    font-size: 6vw;
-  }
-  .header {
-    height: 12vh;
-    width: 70vw;
-  }
-  .header:hover {
-    height: 12.5vh;
-    width: 80vw;
-  }
-  .sheplusplus {
-    font-size: 3vw;
-  }
-  .athena {
-    font-size: 3vw;
-  }
-  .vp {
-    font-size: 3vw;
-  }
+form {
+  border: 1px solid #ccc;
+  padding: 3px;
+  text-align: center;
 }
