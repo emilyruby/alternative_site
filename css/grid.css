@@ -15,15 +15,15 @@
 
 .vp {
   grid-column: 3 / span 3;
-  grid-row: 12 / span 1;
+  grid-row: 13 / span 1;
 }
 
 .sheplusplus {
   grid-column: 3 / span 3;
-  grid-row: 14 / span 1;
+  grid-row: 15 / span 1;
 }
 
 .athena {
   grid-column: 3 / span 3;
-  grid-row: 16 / span 1;
+  grid-row: 17 / span 1;
 }

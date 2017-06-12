@@ -46,6 +46,15 @@ a {
   font-size: var(--header);
   border-radius: 10px;
   font-family: 'Roboto Mono';
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  width: 40vw;
+  height: 12vh;
+}
+
+.header:hover {
+  height: 12.5vh;
+  width: 50vw;
 }
 
 .title {
@@ -68,24 +77,49 @@ a {
   margin-bottom: 10px;
 }
 
-.grow {
-    height: 100px;
-    width: 22%;
-    margin: 5px 1% 5px 1%;
-    float: left; /* Just for presentation (Not required) */
-    position: relative; /* Just for presentation (Not required) */
-    transition:height 0.5s; /* Animation time */
-    -webkit-transition:height 0.5s; /* For Safari */
-}
-.grow:hover {
-    height: 115px; /* This is the height on hover */
+@media all and (max-width: 755px) {
+  .social {
+    width: 55px;
+  }
+  .title {
+    font-size: 20vw;
+  }
+  .subtitle {
+    font-size: 15vw;
+  }
+  .header {
+    height: 12vh;
+    width: 70vw;
+  }
+  .sheplusplus {
+    font-size: 6.5vw;
+  }
+  .athena {
+    font-size: 6.5vw;
+  }
+  .vp {
+    font-size: 20vw;
+  }
 }
 
-@media only screen and (max-width: 650px) {
-    .name {
-        font-size: 15vw;
-    }
-    .whoami {
-      font-size: 10vw;
-    }
+@media all and (min-width: 837px) and (max-width: 1313px) {
+  .title {
+    font-size: 7vw;
+  }
+  .subtitle {
+    font-size: 6vw;
+  }
+  .header {
+    height: 13vh;
+    width: auto;
+  }
+  .sheplusplus {
+    font-size: 2.5vw;
+  }
+  .athena {
+    font-size: 2.5vw;
+  }
+  .vp {
+    font-size: 3vw;
+  }
 }
