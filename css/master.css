@@ -26,6 +26,7 @@ body {
 
 #signup {
   font-family: 'Roboto Mono';
+  text-align: left;
 }
 
 a {
@@ -86,4 +87,26 @@ form {
   border: 1px solid #ccc;
   padding: 3px;
   text-align: center;
+}
+
+.image {
+  width: 60%;
+}
+
+.project {
+  font-size: var(--header);
+  border-radius: 10px;
+  font-family: 'Roboto Mono';
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  width: 35vw;
+}
+
+.description {
+  font-size: 0.8vw;
+}
+
+.speaker {
+  font-size: 2vw;
+  font-family: 'Satisfy', cursive;
 }
