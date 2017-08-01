@@ -1,6 +1,6 @@
 @import "social.css";
-@import "grid.css";
 @import "media.css";
+@import "arrangement.css";
 
 :root {
   --grad-start: hsl(320, 100%, 75%);
@@ -11,11 +11,14 @@
 }
 
 .page {
-  display: grid;
+  /*display: grid;
   grid-template-columns: 15vw 10vw 7vw 36vw 7vw 10vw 15vw;
-  grid-template-rows: repeat(5, 10vh 20vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh);
+  grid-template-rows: repeat(5, 10vh 20vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh);*/
+  display: flex;
   justify-items: center;
   align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 body {
@@ -27,6 +30,9 @@ body {
 #signup {
   font-family: 'Roboto Mono';
   text-align: left;
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
 }
 
 a {
@@ -35,17 +41,17 @@ a {
 }
 
 .text {
-  border-radius: 5px;
   background-color: #ffffff;
-  box-shadow: 10px 10px 5px #888888;
-  padding: 10px;
+  box-shadow: 0px 2px 20px 4px rgba(0, 0, 0, 0.33);
   text-align: center;
-  align-self: start;
   font-family: 'Bungee Shade';
 }
 
 .subtitle {
   font-size: var(--subtitle);
+  padding: 10px;
+  border-radius: 5px;
+  width: 90%;
 }
 
 .header {
@@ -54,18 +60,28 @@ a {
   font-family: 'Roboto Mono';
   transition: 0.5s;
   -webkit-transition: 0.5s;
-  width: 35vw;
-  height: 10vh;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  height: 30vh;
 }
 
-.header:hover {
-  height: 11vh;
-  width: 40vw;
+.header-text {
+  width: 35vw;
+  height: 10vh;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  margin: 15px;
+  border-radius: 5px;
+  font-family: 'Roboto Mono';
 }
 
 .title {
   font-size: var(--title);
   padding: 10px;
+  border-radius: 5px;
 }
 
 .gradient-text {
@@ -81,6 +97,7 @@ a {
   letter-spacing: 3px;
   margin: 0;
   margin-bottom: 10px;
+  font-size: 8vmin;
 }
 
 form {
@@ -94,12 +111,7 @@ form {
 }
 
 .project {
-  font-size: var(--header);
-  border-radius: 10px;
-  font-family: 'Roboto Mono';
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  width: 35vw;
+  width: 40%;
 }
 
 .description {
@@ -109,4 +121,92 @@ form {
 .speaker {
   font-size: 2vw;
   font-family: 'Satisfy', cursive;
+}
+
+#quote {
+  font-size: 5vmin;
+  font-family: 'Satisfy', cursive;
+  text-align: center;
+}
+
+.quote {
+  height: 100vh;
+}
+
+.person {
+  font-size: 2vw;
+  font-family: 'Satisfy', cursive;
+}
+
+.item {
+  font-size: 2.4vmin;
+  margin: 15px;
+  text-align: center;
+}
+
+.item-holder:hover {
+  height: 11vh;
+  width: 30vw;
+}
+
+.item-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-holder:hover {
+  height: 34vh;
+  width: 30vw;
+}
+
+.item_container {
+  margin-top: 25px;;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project_container {
+  margin-top: 25px;;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.category {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: auto;
+  margin: 25px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.widget {
+  margin: 40px;
+}
+
+#tinyletter_signup {
+  background-color: white;
+}
+
+.widgets_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  height: 100%;
 }
