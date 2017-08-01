@@ -1,0 +1,43 @@
+.social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 10px;
+}
+
+.intro {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.whoami {
+  align-self: center;
+}
+
+.name {
+  align-self: center;
+}
+
+.widgets {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.like {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.whatilike {
+  border-top: 30vh;
+  border-bottom: 30vh;
+}
+
+.category {
+  height: 100vh;
+}
